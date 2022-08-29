@@ -1,0 +1,346 @@
+@import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lateef', serif;
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    /*this bellow is how to make the background transparent*/
+    background-color: rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    font-size: 20px;
+  }
+  
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+.introduction {
+  width: 100%;
+  display: flex;
+  background: url("https://us.123rf.com/450wm/jirsak/jirsak1603/jirsak160300021/53858278-lo-sviluppo-personale-crescita-personale-e-di-carriera-il-successo-il-progresso-la-motivazione-e-pot.jpg?ver=6")  no-repeat center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #f2f2f2;
+  min-height: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  padding-left: 21px
+ 
+}
+.introduction-contant{
+   font-family: 'Scheherazade', serif;
+}
+.introduction .max-width {
+  margin: auto 0 auto 40px;
+ 
+}
+.introduction .introduction-contant .text-1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-left: -3px;
+  font-weight: bold;
+}
+.introduction .introduction-contant .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.introduction .introduction-contant .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #e01f2f;
+  font-weight: bolder;
+}
+.introduction .introduction-contant .text-4 {
+  font-size: 85px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.styling-media {
+  display: inline;
+  padding: 22px;
+  margin: 213px;
+  font-size: 25px;
+  
+}
+
+@media screen and (max-width: 1023px){
+  .introduction .introduction-contant .text-4 {
+    font-size: 70px;
+    font-weight: 400;
+    margin-left: -3px;
+    margin-bottom: 3px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 700px){
+  .introduction .introduction-contant .text-2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: -3px;
+  } 
+  .introduction .introduction-contant .text-4 {
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: -3px;
+  }
+  
+  }
+  
+.head-title {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0.08em;
+}
+
+.container {
+  height: 260px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background: #FFF6FF;
+  font-size: 22px;
+
+}
+.box {
+  float: left;
+  width: 31%;
+  padding: 0 10px;
+  margin: 12px;
+}
+/* Remove extra left and right margins, due to padding */
+.first-line {
+  margin: 0 -5px;
+}
+.box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.image-styling {
+  width: 240px;
+  border-radius: 13px;
+  align-items: center;
+}
+.title-styling {
+border: 3px mone;
+margin-bottom: 10px;
+
+}
+.first-line::after {
+  content: "";
+  display: table; /* Make the container element behave like a table */
+  clear: both;
+}
+.second-line::after {
+  content: "";
+  display: table; /* Make the container element behave like a table */
+  clear: both;
+}
+.second-line {
+  margin: 0 -5px;
+}
+.third-line::after {
+  content: "";
+  display: table; /* Make the container element behave like a table */
+  clear: both;
+}
+
+@media screen and (max-width: 980px){
+  .introduction-contant {
+    margin-top: 45px;
+  }
+  .box{
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+}
+.third-line {
+  margin: 0 -5px;
+}
+.how-to-contact {
+  background: rgb(238, 231, 231);
+}
+
+.methods {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* make the box back to another line if the screen start be be smaller */
+  flex-wrap: wrap;
+ 
+}
+.methods-box {
+  background-color: rgb(249, 249, 249);
+  padding: 27px;
+  margin: 42px;
+  width: 21em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15);
+  border-radius: 5px;
+  transition: 0.8s ease;
+}
+.methods-box:hover {
+  transform: scale(1.1);
+}
+.title{
+  text-align: center;
+  padding: 8px;
+  letter-spacing: 2px;
+  word-spacing: 4x;
+  font-size: 1.95em;
+  color: rgba(42, 15, 223, 0.899);
+}
+.text {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+}
+.whatssap {
+  margin: 30px;
+  width: 100%;
+  background-color: rgba(0, 255, 128, 0.796);
+  border: 1px solid green;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(47, 40, 40);
+
+}
+@media screen and (max-width: 700px){
+  .conlink {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0;
+  }
+  .form{
+    font-weight: none;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+
+  }
+}
+.link1 {
+  float: right;
+  margin: auto;
+  width: auto;
+  padding: 15px;
+}
+.link {
+  float: right;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: auto;
+}
+
+.fa {
+  color: green;
+  padding: 8px;
+}
+.form {
+  margin: auto;
+  width: 50%;
+  background-color: rgba(253, 13, 49, 0.624);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+
+}
+
+ /* styling the contact details  */
+
+ /*this to set css to style part contact information */
+ 
+.contact-info {
+  
+  background-color: rgb(20, 18, 18);
+  color: white;
+ 
+}
+.styling-contact {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+  padding-left: 230px;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Clear floats after the columns */
+
+.contact-info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 800px){
+  .styling-contact{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+.fix-email {
+text-transform: lowercase;
+}
+
